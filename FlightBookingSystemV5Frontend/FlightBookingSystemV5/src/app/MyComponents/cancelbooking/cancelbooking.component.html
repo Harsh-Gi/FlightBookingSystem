@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <h2 class="text-light mt-5">Your Booking</h2>
+    <table *ngIf="bookingArray != null && bookingArray.length>0" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Passenger Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Seat No.</th>
+                <th>Starting Point</th>
+                <th>End Point</th>
+                <th>Start Time</th>
+                <th>Airline</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of bookingArray">
+                <td>{{row.bookingId}}</td>
+                <td>{{row.userName}}</td>
+                <td>{{row.age}}</td>
+                <td>{{row.gender}}</td>
+                <td>{{row.seatNo}}</td>
+                <td>{{row.startLoc}}</td>
+                <td>{{row.endLoc}}</td>
+                <td>{{row.startTime}}</td>
+                <td>{{row.airlineName}}</td>
+                <td><button class="btn btn-sm btn-danger m-2" (click)="cancelBookingClick(row.bookingId)">Cancel</button></td>
+            </tr>
+        </tbody>
+      </table>
+</div>

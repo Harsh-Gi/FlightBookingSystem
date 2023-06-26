@@ -1,0 +1,7 @@
+#baseDiv{
+    background-image: url("../assets/images/FlightBackground.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100%;
+    padding-bottom: 5vw;
+}
