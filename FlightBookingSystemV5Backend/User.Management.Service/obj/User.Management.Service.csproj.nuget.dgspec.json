@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\VisualStudioProjects\\User.Management.Service\\User.Management.Service.csproj": {}
+    "D:\\Projects\\FullStackProjects\\FlightBookingSystemV5\\FlightBookingSystemV5Backend\\User.Management.Service\\User.Management.Service.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\VisualStudioProjects\\User.Management.Service\\User.Management.Service.csproj": {
+    "D:\\Projects\\FullStackProjects\\FlightBookingSystemV5\\FlightBookingSystemV5Backend\\User.Management.Service\\User.Management.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\VisualStudioProjects\\User.Management.Service\\User.Management.Service.csproj",
+        "projectUniqueName": "D:\\Projects\\FullStackProjects\\FlightBookingSystemV5\\FlightBookingSystemV5Backend\\User.Management.Service\\User.Management.Service.csproj",
         "projectName": "User.Management.Service",
-        "projectPath": "D:\\Projects\\VisualStudioProjects\\User.Management.Service\\User.Management.Service.csproj",
+        "projectPath": "D:\\Projects\\FullStackProjects\\FlightBookingSystemV5\\FlightBookingSystemV5Backend\\User.Management.Service\\User.Management.Service.csproj",
         "packagesPath": "C:\\Users\\harsh\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\VisualStudioProjects\\User.Management.Service\\obj\\",
+        "outputPath": "D:\\Projects\\FullStackProjects\\FlightBookingSystemV5\\FlightBookingSystemV5Backend\\User.Management.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\harsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

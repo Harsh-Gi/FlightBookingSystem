@@ -22,3 +22,15 @@ D:\Projects\VisualStudioProjects\User.Management.Service\obj\Debug\net6.0\User.M
 D:\Projects\VisualStudioProjects\User.Management.Service\obj\Debug\net6.0\refint\User.Management.Service.dll
 D:\Projects\VisualStudioProjects\User.Management.Service\obj\Debug\net6.0\User.Management.Service.pdb
 D:\Projects\VisualStudioProjects\User.Management.Service\obj\Debug\net6.0\ref\User.Management.Service.dll
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\bin\Debug\net6.0\User.Management.Service.deps.json
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\bin\Debug\net6.0\User.Management.Service.dll
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\bin\Debug\net6.0\User.Management.Service.pdb
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.csproj.AssemblyReference.cache
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.AssemblyInfoInputs.cache
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.AssemblyInfo.cs
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.csproj.CoreCompileInputs.cache
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.dll
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\refint\User.Management.Service.dll
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\User.Management.Service.pdb
+D:\Projects\FullStackProjects\FlightBookingSystemV5\FlightBookingSystemV5Backend\User.Management.Service\obj\Debug\net6.0\ref\User.Management.Service.dll

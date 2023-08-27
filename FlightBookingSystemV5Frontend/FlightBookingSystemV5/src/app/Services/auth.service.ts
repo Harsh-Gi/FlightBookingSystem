@@ -64,6 +64,7 @@ export class AuthService {
   bookTicket(bookObj:any){
     const headers = this.getAuthorizationHeaders();
     return this.http.post<any>(`${this.baseUrl}Booking`, bookObj, {headers});
+    // return this.http.post<any>(`${this.baseUrl}Booking`, bookObj);
   }
 
   addAirline(airlineObj:any){

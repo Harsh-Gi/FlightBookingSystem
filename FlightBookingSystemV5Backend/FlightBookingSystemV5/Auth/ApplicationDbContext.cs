@@ -13,7 +13,7 @@ namespace FlightBookingSystemV5.Auth
 
         public DbSet<JourneyDetail> JourneyDetails { get; set; }
         public DbSet<BookingDetail> BookingDetails { get; set; }
-        public DbSet<AirlineAuthority> AirlineAuthorities { get; set; }
+        //public DbSet<AirlineAuthority> AirlineAuthorities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

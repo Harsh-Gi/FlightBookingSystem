@@ -44,7 +44,7 @@ namespace FlightBookingSystemV5.Controllers
                 //        flight = jd
                 //    });
                 //}
-                var json = JsonSerializer.Serialize(res);
+                //var json = JsonSerializer.Serialize(res);
                 return Ok(res);
                 //return Ok(new Response { Status = "Success", Message = "Search Succeed!" });
             }

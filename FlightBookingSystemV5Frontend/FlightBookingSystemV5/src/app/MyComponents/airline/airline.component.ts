@@ -22,8 +22,12 @@ export class AirlineComponent {
   bClassPrice!: number;
   eClassCapacity!: number;
   eClassAvailableSeats!: number;
+  eClassCurrSeatNo!: number;
   bClassCapacity!: number;
   bClassAvailableSeats!: number;
+  bClassCurrSeatNo!: number;
+  eCancelledSeatNos!: string;
+  bCancelledSeatNos!: string;
 
   flightData:any;
 
@@ -33,6 +37,15 @@ export class AirlineComponent {
   resultArray!:any;
   userName:string="";
   constructor(private auth: AuthService, private userData:UserdataService){}
+
+  ngOnInit(){
+    this.userData.getUsernameFromStore().subscribe(val=>{
+      let userNameFromToken=this.auth.getUsernameFromToken();
+      this.userName=val || userNameFromToken;
+      this.airlineName=val || userNameFromToken;
+    });
+    this.getAllFlights(this.userName);
+  }
 
   getAllFlights(userName:string){
     this.auth.getAllFlights({
@@ -58,15 +71,6 @@ export class AirlineComponent {
         });
       }
     });
-  }
-
-  ngOnInit(){
-    this.userData.getUsernameFromStore().subscribe(val=>{
-      let userNameFromToken=this.auth.getUsernameFromToken();
-      this.userName=val || userNameFromToken;
-      this.airlineName=val || userNameFromToken;
-    });
-    this.getAllFlights(this.userName);
   }
 
   deleteFlight(id:number){
@@ -107,18 +111,22 @@ export class AirlineComponent {
       next:(res)=>{
         this.flightData=res;
         this.journeyIdN=this.flightData.journeyId;
-        this.flightId = this.flightData.flightId;
+        this.flightId=this.flightData.flightId;
         this.airlineName=this.flightData.airlineName;
-        this.startLoc =this.flightData.startLoc;
-        this.endLoc =this.flightData.endLoc;
-        this.startTime =this.flightData.startTime;
-        this.endTime =this.flightData.endTime;
-        this.eClassPrice =this.flightData.eClassPrice;
-        this.bClassPrice =this.flightData.bClassPrice;
-        this.eClassCapacity =this.flightData.eClassCapacity;
-        this.eClassAvailableSeats =this.flightData.eClassAvailableSeats;
-        this.bClassCapacity =this.flightData.bClassCapacity;
-        this.bClassAvailableSeats =this.flightData.bClassAvailableSeats;
+        this.startLoc=this.flightData.startLoc;
+        this.endLoc=this.flightData.endLoc;
+        this.startTime=this.flightData.startTime;
+        this.endTime=this.flightData.endTime;
+        this.eClassPrice=this.flightData.eClassPrice;
+        this.bClassPrice=this.flightData.bClassPrice;
+        this.eClassCapacity=this.flightData.eClassCapacity;
+        this.eClassAvailableSeats=this.flightData.eClassAvailableSeats;
+        this.eClassCurrSeatNo=this.flightData.eClassCurrSeatNo;
+        this.bClassCapacity=this.flightData.bClassCapacity;
+        this.bClassAvailableSeats=this.flightData.bClassAvailableSeats;
+        this.bClassCurrSeatNo=this.flightData.bClassCurrSeatNo;
+        this.eCancelledSeatNos=this.flightData.eCancelledSeatNos;
+        this.bCancelledSeatNos=this.flightData.bCancelledSeatNos;
       },
       error:(err)=>{
         Swal.fire({
@@ -162,8 +170,12 @@ export class AirlineComponent {
           bClassPrice:this.bClassPrice,
           eClassCapacity:this.eClassCapacity,
           eClassAvailableSeats:this.eClassAvailableSeats,
+          eClassCurrSeatNo:this.eClassCurrSeatNo,
           bClassCapacity:this.bClassCapacity, 
-          bClassAvailableSeats:this.bClassAvailableSeats
+          bClassAvailableSeats:this.bClassAvailableSeats,
+          bClassCurrSeatNo:this.bClassCurrSeatNo,
+          eCancelledSeatNos:this.eCancelledSeatNos,
+          bCancelledSeatNos:this.bCancelledSeatNos
         }).subscribe({
           next:(res)=>{
             Swal.fire("Success!", "Fligth Details Updated Successfully!", "success");

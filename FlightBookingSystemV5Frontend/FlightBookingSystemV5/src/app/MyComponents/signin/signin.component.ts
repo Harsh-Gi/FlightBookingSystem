@@ -57,6 +57,8 @@ export class SigninComponent {
           this.userData.setUsernameForStore(tokenPayload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]);
           this.userData.setEmailForStore(tokenPayload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"]);
           this.userData.setRoleForStore(tokenPayload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"]);
+          this.userData.setUserIdForStore(tokenPayload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country"]);
+          
           Swal.fire({
             title: 'Success!',
             text: 'Login Successfully!',

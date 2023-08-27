@@ -120,8 +120,10 @@ export class BookingComponent {
         },
         error:(paymentErr)=>{
           Swal.fire({
-            title: 'Payment Failed!',
-            text: "Payment Failed! Please Try Again...",
+            title: paymentErr.title,
+            // title: 'Payment Failed!',
+            // text: "Payment Failed! Please Try Again...",
+            text: paymentErr.message,
             icon: 'error',
             confirmButtonText: 'Ok'
           });

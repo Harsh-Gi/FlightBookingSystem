@@ -78,7 +78,7 @@ namespace FlightBookingSystemV5.Controllers
                     }
                     journeyDetail.EClassAvailableSeats -= 1;
                 }
-                else
+                else if(bookingData.TicketType == "Business" && journeyDetail.BClassAvailableSeats > 0)
                 {
                     //bookingDetail.SeatNo = "B" + (journeyDetail.BClassCapacity - journeyDetail.BClassAvailableSeats + 1);
 

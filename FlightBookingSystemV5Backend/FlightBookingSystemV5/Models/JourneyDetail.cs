@@ -35,14 +35,14 @@ namespace FlightBookingSystemV5.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "Flight Capacity is Required")]
         public int EClassCapacity { get; set; }
         public int EClassAvailableSeats { get; set; }
-        public int EClassCurrSeatNo { get; set; }
+        public int EClassCurrSeatNo { get; set; } = 0;
         [Required(AllowEmptyStrings = false, ErrorMessage = "Flight Capacity is Required")]
         public int BClassCapacity { get; set; }
         public int BClassAvailableSeats { get; set; }
-        public int BClassCurrSeatNo { get; set; }
+        public int BClassCurrSeatNo { get; set; } = 0;
         [Column(TypeName = "VARCHAR(MAX)")]
-        public string ECancelledSeatNos { get; set; }
+        public string ECancelledSeatNos { get; set; } = "";
         [Column(TypeName = "VARCHAR(MAX)")]
-        public string BCancelledSeatNos { get; set; }
+        public string BCancelledSeatNos { get; set; } = "";
     }
 }
